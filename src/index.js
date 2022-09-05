@@ -1,5 +1,5 @@
 import './css/styles.css';
-import { fetchImages } from './js/fetchImages';
+import { fetchImages } from './js/fetchImages.js';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
@@ -27,6 +27,7 @@ function onformEL(e) {
   }
   fetchImages(input, page)
     .then(({ data }) => {
+      console.log(5555);
       if (data.totalHits === 0) {
         Notiflix.Notify.warning(
           'Sorry, there are no images matching your search input. Please try again'
