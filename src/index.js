@@ -1,5 +1,5 @@
 import './css/styles.css';
-import { fetchImages } from './js/fetchImages.js';
+import { fetchImages } from './fetchImages.js';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
