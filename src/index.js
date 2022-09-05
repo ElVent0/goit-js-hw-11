@@ -42,7 +42,7 @@ function onformEL(e) {
         }
       }
     })
-    .catch(() => console.log('Щось не так'));
+    .catch(error => console.log(error));
 }
 
 function onButtonMoreEl() {
