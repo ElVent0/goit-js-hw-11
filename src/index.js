@@ -27,7 +27,7 @@ function onformEL(e) {
   }
   fetchImages(input, page)
     .then(({ data }) => {
-      console.log(5555);
+      console.log(data);
       if (data.totalHits === 0) {
         Notiflix.Notify.warning(
           'Sorry, there are no images matching your search input. Please try again'
