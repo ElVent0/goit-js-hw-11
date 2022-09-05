@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(213, 255, 253);
+  padding-bottom: 100px;
+}
+
+.container {
+  height: 80px;
+  background-color: rgb(155, 255, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+}
+.input {
+  height: 30px;
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 5px 0 0 5px;
+  background-color: azure;
+  padding: 5px 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  height: 42px;
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 0 5px 5px 0;
+  background-color: azure;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: -5px;
+}
+.button:hover,
+.button:focus,
+.button-more:hover,
+.button-more:focus {
+  background-color: rgb(214, 255, 255);
+}
+
+.button-more {
+  width: 100px;
+  height: 42px;
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: azure;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  transition: 0.3s;
+}
+.is-hidden {
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+}
+.photo-card {
+  width: 300px;
+  background-color: azure;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 35px 101px -28px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+.image {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
+.info {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+
+.info-item {
+  color: rgb(58, 58, 58);
+  text-align: center;
+}

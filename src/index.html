@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Homework 11</title>
   </head>
   <body>
-    <include src="./partials/example.html"></include>
-    <script type="module" src="./index.js"></script>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="input"
+        />
+        <button type="submit" class="button">GO</button>
+      </form>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__container"></div>
+      <button type="button" class="button-more hidden">MORE</button>
+    </div>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
